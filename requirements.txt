@@ -1,0 +1,11 @@
+aiohttp==3.8.3
+biopython==1.79
+google==3.0.0
+google-api-core==2.10.2
+google-api-python-client==2.65.0
+Kivy==2.1.0
+kiwisolver==1.4.4
+lxml==4.9.1
+opencv-python==4.6.0.66
+scanpy==1.9.1
+scipy==1.9.3
