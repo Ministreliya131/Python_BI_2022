@@ -24,6 +24,32 @@ conda activate envv
 ```
 
 ### Step 2. Get the script and it's requirements
+Clone this branch with command in directory you want
+```
+git clone https://github.com/Ministreliya131/Python_BI_2022.git -b Modules_environments_painfull_pain_hw
+```
+Change your directory to `Python_BI_2022`
+```
+cd Python_BI_2022
+```
+
+
+If you still don't have git installed, you can always get it with:
+```
+sudo apt install git-core
+```
+
+### Step 3. Install requirements
+You can install all requirements for `pain.py` by running
+```
+pip3 install -r requirements.txt
+```
+Excellent! You can run the script!
+```
+python3.10 pain.py
+```
+
+
 
 
 
