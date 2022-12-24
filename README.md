@@ -31,5 +31,5 @@ This module have two classes **Read** and **FASTQFile** and function **read_fast
 ## Function **read_fastq**
 Creates Read-objects from current FASTQ-file and one object named FASTQFile.
 
-To create this script "test.fastq" file from **Homework** 2 was used
+To create this script "test.fastq" file from **Homework 2** was used
 
