@@ -47,16 +47,7 @@ class FASTQFile:
                 idd1 = self.fastq_records[j].read_id
                 idd2 = self.fastq_records[j + 1].read_id
 
-                if q1 < q2:
-                    self.fastq_records[j], self.fastq_records[j + 1] = self.fastq_records[j + 1], self.fastq_records[j]
-
-                elif q1 == q2 and ll1 < ll2:
-                    self.fastq_records[j], self.fastq_records[j + 1] = self.fastq_records[j + 1], self.fastq_records[j]
-
-                elif q1 == q2 and ll1 == ll2 and gc1 < gc2:
-                    self.fastq_records[j], self.fastq_records[j + 1] = self.fastq_records[j + 1], self.fastq_records[j]
-
-                elif q1 == q2 and ll1 == ll2 and gc1 == gc2 and idd1 < idd2:
+                if (q1, ll1, gc1, idd1) < (q2, ll2, gc2, idd2):
                     self.fastq_records[j], self.fastq_records[j + 1] = self.fastq_records[j + 1], self.fastq_records[j]
 
     def write_to_file(self, fastq_file_name):
