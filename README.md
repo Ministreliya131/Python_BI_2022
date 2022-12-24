@@ -7,7 +7,7 @@
 - **rm.py** - imitates the UNIX **rm** utility. Takes the option -r (recursive). Takes the path to the file or directory. -r option is required to recursively remove the directory. Usage example: `./rm.py file_to_delete.txt`, `./rm.py -r directory_to_delete`
 - **ls.py** - imitates the UNIX **ls** utility. Prints all files and directories in the specified directory. Can take option -a (hidden files/directories shown).
 
-**sort.py** and **wc.py** could work in pipes.
+**sort.py** and **wc.py** can work in pipes.
 
 ## Installation and usage ##
 
