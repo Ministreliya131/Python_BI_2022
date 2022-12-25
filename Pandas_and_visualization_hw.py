@@ -78,7 +78,7 @@ rRNA_num
 # In[78]:
 
 
-plt.subplots(figsize = (25,15))
+plt.subplots(figsize = (25, 15))
 
 sns.barplot(data = rRNA_num,
             x = "Ref",
