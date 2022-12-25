@@ -21,11 +21,9 @@ if __name__ == "__main__":
                 for line in inn:
                     all_lines.append(line.strip())
 
-    if not sys.stdin.isatty():
-        for line in sorted(sorted(all_lines), key=lambda x: x.lower()):
+    for line in sorted(sorted(all_lines), key=lambda x: x.lower()):
+        if not sys.stdin.isatty():
             out_line = line
-            sys.stdout.write(out_line)
-    else:
-        for line in sorted(sorted(all_lines), key=lambda x: x.lower()):
+        else:
             out_line = f"{line}\n"
-            sys.stdout.write(out_line)
+        sys.stdout.write(out_line)
