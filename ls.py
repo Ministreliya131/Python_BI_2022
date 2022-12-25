@@ -16,7 +16,7 @@ if __name__ == "__main__":
     try:
         if args.all:
             current_files = [".", ".."]
-            current_files += list(sorted(os.listdir(path)))
+            current_files += sorted(os.listdir(path))
         else:
             current_files = sorted(os.listdir(path))
         sys.stdout.write(' '.join(current_files) + "\n")
