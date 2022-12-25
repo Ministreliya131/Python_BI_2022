@@ -32,9 +32,9 @@ get_ipython().system('unzip diffexpr_data.tsv.zip')
 
 def read_gff(path_to_file):
     gff = pd.read_csv(path_to_file,
-                      sep = "\t",
-                      header = 0,
-                      names = ["chr", "source", "type", "start", "end", "score", "strand", "phase", "atributes"])
+                      sep="\t",
+                      header=0,
+                      names=["chr", "source", "type", "start", "end", "score", "strand", "phase", "atributes"])
     return gff
 
 
