@@ -15,12 +15,8 @@ if __name__ == "__main__":
     options = [False, False, False]
     if args.lines == args.words == args.bytes == False:
         options = [True, True, True]
-    elif args.lines:
-        options[0] = True
-    elif args.words:
-        options[1] = True
-    elif args.bytes:
-        options[2] = True
+    else:
+        options = [args.lines, args.words, args.bytes]
 
     all_fles = []
 
