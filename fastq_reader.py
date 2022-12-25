@@ -33,7 +33,7 @@ class FASTQFile:
         self.fastq_records = fastq_records
 
     def sort_reads(self):
-        sorted_reads = sorted(self.fastq_records, key= lambda x: (x.mean_quality(), x.read_sequence, x.gc(), x.read_id), reverse=True)
+        sorted_reads = sorted(self.fastq_records, key= lambda x: (x.mean_quality(), len(x.read_sequence), x.gc(), x.read_id), reverse=True)
         return sorted_reads
 
     def write_to_file(self, fastq_file_name):
