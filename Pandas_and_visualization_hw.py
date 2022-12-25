@@ -84,7 +84,7 @@ sns.barplot(data = rRNA_num,
             x = "Ref",
             hue = "rRNA",
             y = "number",
-            palette = ["#DC143C", "#20B2AA", "#9400D3"])
+            palette=["#DC143C", "#20B2AA", "#9400D3"])
 
 plt.xticks(rotation = 90, size = 17)
 plt.yticks(size = 17)
